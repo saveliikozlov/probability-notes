@@ -102,6 +102,27 @@
     draw();
   });
 
+  // Convolution lab: the overlap of two unit bands is the density of U[0,1] + U[0,1].
+  document.querySelectorAll('[data-lab="conv"]').forEach(function (lab) {
+    var input = lab.querySelector('[data-k="a"]'), W = 320, lo = -1.2, hi = 3.2, BASE = 180, H = 90;
+    function X(v) { return ((v - lo) / (hi - lo)) * W; }
+    function band(name, from, to) {
+      var r = lab.querySelector('[data-r="' + name + '"]');
+      r.setAttribute("x", X(from)); r.setAttribute("width", Math.max(X(to) - X(from), 0));
+    }
+    lab.querySelector('[data-p="tri"]').setAttribute("points", [[lo, 0], [0, 0], [1, 1], [2, 0], [hi, 0]].map(function (p) { return X(p[0]).toFixed(1) + "," + (BASE - p[1] * H); }).join(" "));
+    [["x0", 0], ["x1", 1], ["x2", 2]].forEach(function (t) { lab.querySelector('[data-t="' + t[0] + '"]').setAttribute("x", X(t[1])); });
+    function draw() {
+      var a = +input.value, from = Math.max(0, a - 1), to = Math.min(1, a), f = Math.max(to - from, 0);
+      band("fixed", 0, 1); band("moving", a - 1, a); band("overlap", from, from + f);
+      var dot = lab.querySelector('[data-c="dot"]');
+      dot.setAttribute("cx", X(a)); dot.setAttribute("cy", BASE - f * H);
+      out(lab, "a", a.toFixed(2)); out(lab, "f", f.toFixed(2));
+    }
+    lab.addEventListener("input", draw);
+    draw();
+  });
+
   // Binomial vs Poisson lab. Works with logarithms so large n cannot overflow.
   var NS = "http://www.w3.org/2000/svg";
   var logFact = [0];

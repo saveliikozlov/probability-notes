@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="assets/katex.min.css"><link rel="stylesheet" href="assets/site.css">
 <script>try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t}catch(e){}</script>
 </head><body><div class="shell"><nav class="side" id="side" aria-label="Зміст"><a class="brand" href="index.html">Ймовірність<span>для комп'ютерних наук · STAT2100</span></a>
-<button class="search" type="button" data-search-open>Пошук <kbd>⌘K</kbd></button><ol class="parts"><li class="part p1"><b>I · Основи</b><ol><li class=""><a href="01-sample-space.html">1 Простір подій і моделі</a></li><li class=""><a href="02-axioms.html">2 Геометрична ймовірність і аксіоми</a></li><li class=""><a href="03-conditional.html">3 Умовна ймовірність і незалежність</a></li></ol></li><li class="part p2"><b>II · Дискретні величини</b><ol><li class=""><a href="04-discrete.html">4 Дискретні величини й розподіли</a></li><li class=""><a href="05-expectation.html">5 Сподівання, дисперсія, твірні функції</a></li><li class=""><a href="06-limit-theorems.html">6 Схема Бернуллі й граничні теореми</a></li><li class=""><a href="07-random-vectors.html">7 Випадкові вектори й коваріація</a></li></ol></li><li class="part p3"><b>III · Неперервні величини</b><ol><li class=""><a href="08-continuous.html">8 Неперервні величини</a></li><li class="off" title="Чекає лекції">9 Функції від випадкових величин</li><li class="off" title="Чекає лекції">10 Багатовимірні неперервні розподіли</li></ol></li><li class="part p4"><b>IV · Граничні теореми й процеси</b><ol><li class="off" title="Чекає лекції">11 Чебишов, ЗВЧ, ЦГТ</li><li class="off" title="Чекає лекції">12 Процеси Пуассона й Вінера</li></ol></li><li class="part pa"><b>Додатки</b><ol><li class=""><a href="a-method.html">A Карта вибору методу</a></li><li class=""><a href="b-distributions.html">B Таблиця розподілів</a></li><li class=""><a href="c-formulas.html">C Покажчик формул</a></li><li class="here"><a href="d-glossary.html">D Глосарій</a></li><li class=""><a href="e-sheet.html">E Чернетка аркуша A4</a></li></ol></li></ol></nav><main>
+<button class="search" type="button" data-search-open>Пошук <kbd>⌘K</kbd></button><ol class="parts"><li class="part p1"><b>I · Основи</b><ol><li class=""><a href="01-sample-space.html">1 Простір подій і моделі</a></li><li class=""><a href="02-axioms.html">2 Геометрична ймовірність і аксіоми</a></li><li class=""><a href="03-conditional.html">3 Умовна ймовірність і незалежність</a></li></ol></li><li class="part p2"><b>II · Дискретні величини</b><ol><li class=""><a href="04-discrete.html">4 Дискретні величини й розподіли</a></li><li class=""><a href="05-expectation.html">5 Сподівання, дисперсія, твірні функції</a></li><li class=""><a href="06-limit-theorems.html">6 Схема Бернуллі й граничні теореми</a></li><li class=""><a href="07-random-vectors.html">7 Випадкові вектори й коваріація</a></li></ol></li><li class="part p3"><b>III · Неперервні величини</b><ol><li class=""><a href="08-continuous.html">8 Неперервні величини</a></li><li class=""><a href="09-transformations.html">9 Перетворення й випадкові вектори</a></li><li class="off" title="Чекає лекції">10 Багатовимірні неперервні розподіли</li></ol></li><li class="part p4"><b>IV · Граничні теореми й процеси</b><ol><li class="off" title="Чекає лекції">11 Чебишов, ЗВЧ, ЦГТ</li><li class="off" title="Чекає лекції">12 Процеси Пуассона й Вінера</li></ol></li><li class="part pa"><b>Додатки</b><ol><li class=""><a href="a-method.html">A Карта вибору методу</a></li><li class=""><a href="b-distributions.html">B Таблиця розподілів</a></li><li class=""><a href="c-formulas.html">C Покажчик формул</a></li><li class="here"><a href="d-glossary.html">D Глосарій</a></li><li class=""><a href="e-sheet.html">E Чернетка аркуша A4</a></li></ol></li></ol></nav><main>
 <div class="topbar"><button type="button" class="menu" data-menu aria-controls="side">Зміст</button><button type="button" class="search-mini" data-search-open>Пошук</button><button type="button" class="theme" data-toggle>Тема</button></div>
 <article class="appendix "><h1><small>Додаток D</small>Глосарій</h1><p class="lead">Терміни курсу в алфавітному порядку. Лекції й задачі англійською, тож варто знати обидві назви.</p>
 <table>
@@ -19,6 +19,16 @@
 <td>абсолютно неперервна величина</td>
 <td>absolutely continuous r.v.</td>
 <td><a href="08-continuous.html#s8-2">8.2</a></td>
+</tr>
+<tr>
+<td>абсолютно неперервний вектор</td>
+<td>absolutely continuous random vector</td>
+<td><a href="09-transformations.html#s9-6">9.6</a></td>
+</tr>
+<tr>
+<td>адитивність</td>
+<td>additivity</td>
+<td><a href="09-transformations.html#s9-8">9.8</a></td>
 </tr>
 <tr>
 <td>алгебра множин</td>
@@ -156,14 +166,29 @@
 <td><a href="02-axioms.html#s2-5">2.5</a></td>
 </tr>
 <tr>
+<td>заміна змінної</td>
+<td>change of variables</td>
+<td><a href="09-transformations.html#s9-3">9.3</a></td>
+</tr>
+<tr>
 <td>замкненість щодо монотонних границь</td>
 <td>closed under monotone limits</td>
 <td><a href="02-axioms.html#s2-2">2.2</a></td>
 </tr>
 <tr>
+<td>згортка</td>
+<td>convolution</td>
+<td><a href="09-transformations.html#s9-8">9.8</a></td>
+</tr>
+<tr>
 <td>зліченна ймовірнісна модель</td>
 <td>countable probability model</td>
 <td><a href="01-sample-space.html#s1-7">1.7</a></td>
+</tr>
+<tr>
+<td>змішана величина</td>
+<td>mixed random variable</td>
+<td><a href="09-transformations.html#s9-1">9.1</a></td>
 </tr>
 <tr>
 <td>ігнорування базової частоти</td>
@@ -219,6 +244,11 @@
 <td>локальна теорема Муавра-Лапласа</td>
 <td>local De Moivre–Laplace theorem</td>
 <td><a href="06-limit-theorems.html#s6-4">6.4</a></td>
+</tr>
+<tr>
+<td>маргінальна функція розподілу</td>
+<td>marginal CDF</td>
+<td><a href="09-transformations.html#s9-5">9.5</a></td>
 </tr>
 <tr>
 <td>маргінальний розподіл</td>
@@ -326,6 +356,11 @@
 <td><a href="01-sample-space.html#s1-6">1.6</a></td>
 </tr>
 <tr>
+<td>прирощення на прямокутнику</td>
+<td>rectangle increment</td>
+<td><a href="09-transformations.html#s9-5">9.5</a></td>
+</tr>
+<tr>
 <td>прообраз</td>
 <td>preimage</td>
 <td><a href="04-discrete.html#s4-1">4.1</a></td>
@@ -351,9 +386,19 @@
 <td><a href="03-conditional.html#s3-3">3.3</a></td>
 </tr>
 <tr>
+<td>розклад Лебега</td>
+<td>Lebesgue decomposition</td>
+<td><a href="09-transformations.html#s9-1">9.1</a></td>
+</tr>
+<tr>
 <td>розподіл Бернуллі</td>
 <td>Bernoulli distribution</td>
 <td><a href="04-discrete.html#s4-5">4.5</a></td>
+</tr>
+<tr>
+<td>розподіл Парето</td>
+<td>Pareto distribution</td>
+<td><a href="09-transformations.html#s9-3">9.3</a></td>
 </tr>
 <tr>
 <td>розподіл Пуассона</td>
@@ -376,6 +421,11 @@
 <td><a href="08-continuous.html#s8-1">8.1</a></td>
 </tr>
 <tr>
+<td>сингулярний розподіл</td>
+<td>singular distribution</td>
+<td><a href="09-transformations.html#s9-1">9.1</a></td>
+</tr>
+<tr>
 <td>скінченна ймовірнісна модель</td>
 <td>finite probability model</td>
 <td><a href="01-sample-space.html#s1-5">1.5</a></td>
@@ -384,6 +434,16 @@
 <td>складений розподіл</td>
 <td>compound distribution</td>
 <td><a href="05-expectation.html#s5-7">5.7</a></td>
+</tr>
+<tr>
+<td>спільна функція розподілу</td>
+<td>joint CDF</td>
+<td><a href="09-transformations.html#s9-5">9.5</a></td>
+</tr>
+<tr>
+<td>спільна щільність</td>
+<td>joint PDF</td>
+<td><a href="09-transformations.html#s9-6">9.6</a></td>
 </tr>
 <tr>
 <td>спільний розподіл</td>
@@ -451,6 +511,11 @@
 <td><a href="03-conditional.html#s3-3">3.3</a></td>
 </tr>
 <tr>
+<td>функція Кантора</td>
+<td>Cantor function</td>
+<td><a href="09-transformations.html#s9-1">9.1</a></td>
+</tr>
+<tr>
 <td>функція маси ймовірності</td>
 <td>probability mass function, pmf</td>
 <td><a href="04-discrete.html#s4-3">4.3</a></td>
@@ -464,6 +529,11 @@
 <td>щільність</td>
 <td>probability density function, pdf</td>
 <td><a href="08-continuous.html#s8-2">8.2</a></td>
+</tr>
+<tr>
+<td>n-зростання</td>
+<td>n-increasing</td>
+<td><a href="09-transformations.html#s9-5">9.5</a></td>
 </tr>
 </tbody>
 </table>
